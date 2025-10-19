@@ -97,6 +97,27 @@
       margin-right: auto;
     }
 
+    /* Added header contact info styling */
+    .header-contact {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+      font-size: 0.85rem;
+      color: #E63946;
+      font-weight: 600;
+      margin-right: 2rem;
+    }
+
+    .header-contact a {
+      color: #E63946;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .header-contact a:hover {
+      text-decoration: underline;
+    }
+
     .header-logo {
       height: 90px;
       width: auto;
@@ -112,6 +133,21 @@
       font-weight: 600;
       color: #e45555;
       letter-spacing: -0.5px;
+    }
+
+    /* Added phone number link styling under logo */
+    .logo-phone {
+      font-size: 0.9rem;
+      color: #555;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      display: block;
+      margin-top: 0.3rem;
+    }
+
+    .logo-phone:hover {
+      color: #E63946;
     }
 
     /* Hamburger menu button styles */
@@ -410,6 +446,11 @@
         gap: 1.5rem;
       }
 
+      /* Hide header contact on tablet and hide nav on mobile */
+      .header-contact {
+        display: none;
+      }
+
       nav {
         position: absolute;
         top: 100%;
@@ -577,7 +618,10 @@
       <div class="logo-container">
         <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/5-3CjacrzWUl27pDOaKDtkLaqt43trKf.jpg"
           alt="Ladybug Trading Logo" class="header-logo">
-        <div class="logo-text">Ladybug Trading</div>
+        <div>
+          <div class="logo-text">Ladybug Trading</div>
+          <a href="tel:+14692746854" class="logo-phone">(469) 274-6854</a>
+        </div>
       </div>
       <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
         <span></span>
@@ -586,14 +630,27 @@
       </button>
       <nav id="navMenu">
         <ul>
+          <li><a href="#shop">Shop</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#meet-maker">Meet the Maker</a></li>
-          <li><a href="#shop">Shop</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
+
+  <!-- Moved Shop Section to be first -->
+  <!-- Shop Section -->
+  <section id="shop" class="shop">
+    <div class="container">
+      <h2>Go Shopping</h2>
+      <p class="shop-intro">Explore our collection of handcrafted treasures, each made with love and attention to
+        detail.</p>
+      <!-- Etsy Widget -->
+      <div class='sk-ww-etsy-shop' data-embed-id='25609575'></div>
+      <script src='https://widgets.sociablekit.com/etsy-shop/widget.js' defer></script>
+    </div>
+  </section>
 
   <!-- About Section -->
   <section id="about" class="about">
@@ -611,7 +668,7 @@
         towels, aprons, table runners, napkins, shower curtains, baby blankets, and throw pillows. When time allows, we
         also craft unique keepsake soft dolls and toys, embroidered doll faces for DIY projects, and embroidered quilt
         blocks perfect for creating your own quilts or baby blankets with vintage style. We are always open to
-        suggestions. Ladybug0627@gmail.com or call 469-274-6854 9AM to 6PM
+        suggestions. <a href="mailto:Ladybug_Trading@yahoo.com">Ladybug_Trading@yahoo.com</a> or call 469-274-6854 9AM to 6PM
       </p>
     </div>
   </section>
@@ -644,24 +701,12 @@
     </div>
   </section>
 
-  <!-- Shop Section -->
-  <section id="shop" class="shop">
-    <div class="container">
-      <h2>Go Shopping</h2>
-      <p class="shop-intro">Explore our collection of handcrafted treasures, each made with love and attention to
-        detail.</p>
-      <!-- Etsy Widget -->
-      <div class='sk-ww-etsy-shop' data-embed-id='25609575'></div>
-      <script src='https://widgets.sociablekit.com/etsy-shop/widget.js' defer></script>
-    </div>
-  </section>
-
   <!-- Contact Section -->
   <section id="contact">
     <h2>Contact</h2>
     <div class="contact-info">
       <p>Have a question or want to place a custom order?</p>
-      <p>Reach out to us at: <a href="mailto:info@ladybugtrading.com">info@ladybugtrading.com</a></p>
+      <p>Reach out to us at: <a href="mailto:Ladybug_Trading@yahoo.com">Ladybug_Trading@yahoo.com</a></p>
       <p>Or visit our <a href="https://www.etsy.com/shop/ladybugtrading" target="_blank" rel="noopener">Etsy Shop</a>
       </p>
     </div>
